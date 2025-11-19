@@ -1,6 +1,6 @@
 # hilite2ai.com
 
-**Make any website AI-ready in seconds.** A lightweight JavaScript library that lets users highlight text and copy contextual prompts to their favorite AI assistant.
+**Make any website AI-ready in seconds.** A lightweight JavaScript library that lets your users highlight text and copy contextual prompts to their favorite AI assistant.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://github.com/RobinNixon/hilite2ai.com)
@@ -12,6 +12,16 @@ Add one line to your website:
 ```html
 <script src="https://cdn.jsdelivr.net/gh/RobinNixon/hilite2ai.com@main/hilite2ai.min.js"></script>
 ```
+
+## 🎨 Add a Notice Banner
+
+Let users know your site is AI-enhanced, and how to access it, by adding this div anywhere on your page (as long as you have also added the script):
+
+```html
+<div id="hilite2ai"></div>
+```
+
+The script will automatically populate it with a beautiful, dismissible banner.
 
 That's it! Users can now:
 1. **Highlight** any text on your page
@@ -45,16 +55,6 @@ Please explain: "backpropagation algorithm"
 ```
 
 This gives AI assistants complete context for better, more relevant answers.
-
-## 🎨 Add a Notice Banner
-
-Let users know your site is AI-enhanced, and how to access it, by adding this div anywhere on your page (as long as you have also added the script):
-
-```html
-<div id="hilite2ai"></div>
-```
-
-The script will automatically populate it with a beautiful, dismissible banner.
 
 ## 💡 Why Use This?
 
