@@ -1,5 +1,8 @@
 // hilite2ai.com - v1.0.0
-// Enables AI-assisted learning by allowing users to highlight text and copy contextual prompts
+// Enables AI-assisted learning by allowing users to
+// highlight text and copy contextual prompts
+
+// 
 
 (function() {
   'use strict';
@@ -23,7 +26,6 @@
       background: #1976D2;
       transform: translateY(-1px);
     }
-    
     .hilite2ai-notice {
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       color: white;
@@ -38,7 +40,6 @@
       line-height: 1.4;
       animation: slideIn 0.4s ease-out;
     }
-    
     @keyframes slideIn {
       from {
         transform: translateY(-20px);
@@ -49,21 +50,17 @@
         opacity: 1;
       }
     }
-    
     .hilite2ai-icon {
       font-size: 24px;
       flex-shrink: 0;
     }
-    
     .hilite2ai-text {
       flex: 1;
     }
-    
     .hilite2ai-text strong {
       display: inline-block;
       margin-right: 4px;
     }
-    
     .hilite2ai-link {
       color: #fff;
       text-decoration: underline;
@@ -71,11 +68,9 @@
       font-size: 12px;
       white-space: nowrap;
     }
-    
     .hilite2ai-link:hover {
       opacity: 1;
     }
-    
     .hilite2ai-close {
       background: rgba(255, 255, 255, 0.2);
       border: none;
@@ -89,11 +84,9 @@
       flex-shrink: 0;
       transition: background 0.2s;
     }
-    
     .hilite2ai-close:hover {
       background: rgba(255, 255, 255, 0.3);
     }
-    
     @media (max-width: 480px) {
       .hilite2ai-notice {
         font-size: 13px;
@@ -113,14 +106,14 @@
   const noticePlaceholder = document.getElementById('hilite2ai');
   if (noticePlaceholder) {
     noticePlaceholder.className = 'hilite2ai-notice';
-    noticePlaceholder.innerHTML = \`
+    noticePlaceholder.innerHTML = `
       <span class="hilite2ai-icon">✨</span>
       <span class="hilite2ai-text">
         <strong>AI-Enhanced</strong> — Highlight any text on this page to get AI-powered explanations. 
         <a href="https://hilite2ai.com" target="_blank" class="hilite2ai-link">Learn more</a>
       </span>
       <button class="hilite2ai-close" onclick="this.parentElement.remove()">×</button>
-    \`;
+    `;
   }
 
   let copyButton = null;
@@ -203,8 +196,8 @@
 
       // Position near selection
       copyButton.style.position = 'absolute';
-      copyButton.style.left = \`\${rect.left + window.scrollX}px\`;
-      copyButton.style.top = \`\${rect.bottom + window.scrollY + 5}px\`;
+      copyButton.style.left = `${rect.left + window.scrollX}px`;
+      copyButton.style.top = `${rect.bottom + window.scrollY + 5}px`;
       copyButton.style.zIndex = '10000';
 
       // Handle click
@@ -217,22 +210,17 @@
         const nearestHeading = findNearestHeading(selection);
 
         // Build contextual prompt
-        let prompt = \`Message created via hilite2ai.com
-
-I am viewing:
-
- • Source: \${currentUrl}
- • Title: \${pageTitle}
-\`;
+        let prompt = `Message created via hilite2ai.com\n\n` +
+                     `I am viewing:\n\n` +
+                     ` • Source: ${currentUrl}\n` +
+                     ` • Title: ${pageTitle}\n`;
         if (nearestHeading) {
-          prompt += \` • Section: \${nearestHeading}
-\`;
+          prompt += ` • Section: ${nearestHeading}\n`;
         }
-        prompt += \`
-Please explain: "\${selectedText}"\`;
+        prompt += `\nPlease explain: "${selectedText}"`;
 
         navigator.clipboard.writeText(prompt).then(() => {
-          copyButton.textContent = \`✓ Copied! Press \${thisOS}+V in your AI\`;
+          copyButton.textContent = `✓ Copied! Press ${thisOS}+V in your AI`;
           copyButton.style.background = '#4CAF50';
 
           // Remove the selection after copying
