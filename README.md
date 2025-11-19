@@ -40,7 +40,7 @@ That's it! Users can now:
 
 ## 📋 What Gets Copied
 
-When users click the button, a structured prompt is copied to their clipboard:
+When users click the button, a structured prompt is copied to their clipboard that looks like this:
 
 ```
 Message created via hilite2ai.com
