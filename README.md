@@ -67,7 +67,7 @@ The script will automatically populate it with a beautiful, dismissible banner.
 
 ### For Users
 - ✅ **Contextual help** - AI sees source, title, and section
-- ✅ **Any AI works** - Use Claude, ChatGPT, Gemini, Grok, local LLMs
+- ✅ **Any AI works** - Use Claude, ChatGPT, Copilot, Gemini, Grok, local LLMs
 - ✅ **Mobile support** - Works on all devices
 
 ## 🔧 Advanced Usage
