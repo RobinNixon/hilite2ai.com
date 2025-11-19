@@ -52,7 +52,7 @@ Want to let users know your site is AI-enhanced? Add this div anywhere on your p
 
 ```html
 <div id="hilite2ai"></div>
-<script src="https://cdn.jsdelivr.net/gh/yourusername/hilite2ai@1.0.0/hilite2ai.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/RobinNixon/hilite2ai@1.0.0/hilite2ai.js"></script>
 ```
 
 The script will automatically populate it with a beautiful, dismissible banner.
@@ -103,13 +103,13 @@ The script uses CSS classes you can override:
 Use a specific version to prevent breaking changes:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/yourusername/hilite2ai@1.0.0/hilite2ai.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/RobinNixon/hilite2ai@1.0.0/hilite2ai.js"></script>
 ```
 
 Or always get the latest:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/yourusername/hilite2ai@latest/hilite2ai.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/RobinNixon/hilite2ai@latest/hilite2ai.js"></script>
 ```
 
 ## 🌐 Browser Support
@@ -132,7 +132,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 1. Clone the repo
 ```bash
-git clone https://github.com/yourusername/hilite2ai.git
+git clone https://github.com/RobinNixon/hilite2ai.git
 ```
 
 2. Make changes to `hilite2ai.js`
@@ -147,7 +147,7 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## 🙏 Credits
 
-Created by [Robin Nixon](https://github.com/yourusername) to make web content more accessible and AI-ready.
+Created by [Robin Nixon](https://github.com/RobinNixon) to make web content more accessible and AI-ready.
 
 Inspired by the future of browser-native AI assistance.
 
@@ -160,8 +160,8 @@ As AI becomes integrated into browsers, this pattern will evolve. The structured
 
 ## 📞 Support
 
-- 🐛 **Bug reports**: [GitHub Issues](https://github.com/yourusername/hilite2ai/issues)
-- 💬 **Questions**: [GitHub Discussions](https://github.com/yourusername/hilite2ai/discussions)
+- 🐛 **Bug reports**: [GitHub Issues](https://github.com/yRobinNixon/hilite2ai/issues)
+- 💬 **Questions**: [GitHub Discussions](https://github.com/RobinNixon/hilite2ai/discussions)
 - 🌐 **Website**: [hilite2ai.com](https://hilite2ai.com)
 
 ---
