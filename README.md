@@ -3,14 +3,14 @@
 **Make any website AI-ready in seconds.** A lightweight JavaScript library that lets users highlight text and copy contextual prompts to their favorite AI assistant.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://github.com/yourusername/hilite2ai)
+[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://github.com/RobinNixon/hilite2ai)
 
 ## 🚀 Quick Start
 
 Add one line to your website:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/yourusername/hilite2ai@1.0.0/hilite2ai.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/RobinNixon/hilite2ai@1.0.0/hilite2ai.js"></script>
 ```
 
 That's it! Users can now:
