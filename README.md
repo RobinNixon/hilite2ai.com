@@ -139,7 +139,7 @@ As AI becomes integrated into browsers, this pattern will evolve. The structured
 
 ## 📞 Support
 
-- 🐛 **Bug reports**: [GitHub Issues](https://github.com/yRobinNixon/hilite2ai.com/issues)
+- 🐛 **Bug reports**: [GitHub Issues](https://github.com/RobinNixon/hilite2ai.com/issues)
 - 💬 **Questions**: [GitHub Discussions](https://github.com/RobinNixon/hilite2ai.com/discussions)
 - 🌐 **Website**: [hilite2ai.com](https://hilite2ai.com)
 
