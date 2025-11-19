@@ -48,7 +48,7 @@ This gives AI assistants complete context for better, more relevant answers.
 
 ## 🎨 Add a Notice Banner
 
-Let users know your site is AI-enhanced and how to access it by adding this div anywhere on your page (as long as you have also added the script):
+Let users know your site is AI-enhanced, and how to access it, by adding this div anywhere on your page (as long as you have also added the script):
 
 ```html
 <div id="hilite2ai"></div>
@@ -59,16 +59,15 @@ The script will automatically populate it with a beautiful, dismissible banner.
 ## 💡 Why Use This?
 
 ### For Website Owners
-- ✅ **Enhance learning** - Help readers understand complex content
-- ✅ **Zero cost** - No API fees, no backend needed
+- ✅ **Enhance learning** - Help readers better understand your content
+- ✅ **Zero cost** - No API fees, no backend to your own AI needed
 - ✅ **User choice** - Visitors use their preferred AI
 - ✅ **Future-proof** - Works with emerging browser AI features
-- ✅ **Easy integration** - One script tag, done
+- ✅ **Easy integration** - One script tag and you're done
 
 ### For Users
 - ✅ **Contextual help** - AI sees source, title, and section
-- ✅ **Any AI works** - Use Claude, ChatGPT, Gemini, local LLMs
-- ✅ **Keyboard friendly** - Copy works with Ctrl+C too
+- ✅ **Any AI works** - Use Claude, ChatGPT, Gemini, Grok, local LLMs
 - ✅ **Mobile support** - Works on all devices
 
 ## 🔧 Advanced Usage
@@ -128,7 +127,7 @@ git clone https://github.com/RobinNixon/hilite2ai.com.git
 
 2. Make changes to `hilite2ai.js`
 
-3. Test locally by opening `demo.html` in a browser
+3. Test locally on a variety of content in a browser
 
 4. Submit a PR!
 
