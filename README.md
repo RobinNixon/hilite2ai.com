@@ -75,10 +75,16 @@ The script will automatically populate it with a beautiful, dismissible banner.
 
 ### Self-Hosting
 
-Download `hilite2ai.js` and host it yourself:
+Download `hilite2ai.js` (or the minified `hilite2ai.min.js`) and host it yourself:
 
 ```html
 <script src="/path/to/hilite2ai.js"></script>
+```
+
+Or...
+
+```html
+<script src="/path/to/hilite2ai.min.js"></script>
 ```
 
 ### Customization
