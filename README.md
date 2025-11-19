@@ -21,7 +21,7 @@ That's it! Users can now:
 ## ✨ Features
 
 - **Zero dependencies** - Pure vanilla JavaScript
-- **Tiny footprint** - ~3KB minified
+- **Tiny footprint** - ~5KB minified
 - **Zero configuration** - Works out of the box
 - **AI-agnostic** - Works with any AI assistant
 - **Privacy-first** - No data sent to external servers
