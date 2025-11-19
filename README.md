@@ -1,4 +1,4 @@
-# hilite2ai
+# hilite2ai.com
 
 **Make any website AI-ready in seconds.** A lightweight JavaScript library that lets users highlight text and copy contextual prompts to their favorite AI assistant.
 
