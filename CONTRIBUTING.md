@@ -1,6 +1,6 @@
 # Contributing to hilite2ai.com
 
-Thank you for your interest in contributing to hilite2ai! This document provides guidelines and information for contributors.
+Thank you for your interest in contributing to hilite2ai.com! This document provides guidelines and information for contributors.
 
 ## 🎯 Project Vision
 
@@ -29,7 +29,7 @@ hilite2ai.com aims to make web content more accessible by enabling seamless AI-a
 
 ### Testing Locally
 
-Open `demo.html` in your browser to test changes:
+Use hilite2a.com within various web pages in your browser to test changes:
 
 ### Code Style
 
