@@ -1,10 +1,10 @@
-# Contributing to hilite2ai
+# Contributing to hilite2ai.com
 
 Thank you for your interest in contributing to hilite2ai! This document provides guidelines and information for contributors.
 
 ## 🎯 Project Vision
 
-hilite2ai aims to make web content more accessible by enabling seamless AI-assisted learning. Our goals:
+hilite2ai.com aims to make web content more accessible by enabling seamless AI-assisted learning. Our goals:
 
 - **Simplicity**: One script tag should be all you need
 - **Privacy**: No data collection, no external dependencies
@@ -17,8 +17,8 @@ hilite2ai aims to make web content more accessible by enabling seamless AI-assis
 1. **Fork the repository** on GitHub
 2. **Clone your fork** locally:
    ```bash
-   git clone https://github.com/yourusername/hilite2ai.git
-   cd hilite2ai
+   git clone https://github.com/RobinNixon/hilite2ai.com.git
+   cd hilite2ai.com
    ```
 3. **Create a branch** for your changes:
    ```bash
@@ -30,13 +30,6 @@ hilite2ai aims to make web content more accessible by enabling seamless AI-assis
 ### Testing Locally
 
 Open `demo.html` in your browser to test changes:
-
-```bash
-# Using Python's built-in server
-python -m http.server 8000
-
-# Then visit http://localhost:8000/demo.html
-```
 
 ### Code Style
 
@@ -80,7 +73,7 @@ python -m http.server 8000
 
 ## 🐛 Reporting Bugs
 
-Found a bug? Please [open an issue](https://github.com/yourusername/hilite2ai/issues) with:
+Found a bug? Please [open an issue](https://github.com/RobinNixon/hilite2ai.com/issues) with:
 
 - **Browser and version** (e.g., Chrome 120, Safari 17)
 - **Operating system** (e.g., macOS 14, Windows 11)
@@ -120,7 +113,7 @@ Contributors will be recognized in:
 
 ## 📞 Questions?
 
-- Open a [GitHub Discussion](https://github.com/yourusername/hilite2ai/discussions)
+- Open a [GitHub Discussion](https://github.com/RobinNixon/hilite2ai.com/discussions)
 - Comment on an existing issue
 - Reach out via the project website
 

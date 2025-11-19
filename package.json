@@ -1,5 +1,5 @@
 {
-  "name": "hilite2ai",
+  "name": "hilite2ai.com",
   "version": "1.0.0",
   "description": "Make any website AI-ready by enabling users to highlight text and copy contextual prompts to their favorite AI assistant",
   "main": "hilite2ai.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/hilite2ai.git"
+    "url": "git+https://github.com/RobinNixon/hilite2ai.com.git"
   },
   "keywords": [
     "ai",
@@ -30,7 +30,7 @@
   "author": "Robin Nixon",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yourusername/hilite2ai/issues"
+    "url": "https://github.com/RobinNixon/hilite2ai.com/issues"
   },
   "homepage": "https://hilite2ai.com",
   "files": [
