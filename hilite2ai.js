@@ -2,15 +2,13 @@
 // Enables AI-assisted learning by allowing users to
 // highlight text and copy contextual prompts
 
-// 
-
 (function() {
   'use strict';
 
   // Inject styles into document
   const styles = `
     .ai-copy-button {
-      padding: 4px 8px;
+      padding: 8px 12px;
       background: #2196F3;
       color: white;
       border: 1px solid #bbb;
@@ -21,10 +19,39 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.2);
       white-space: nowrap;
       transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      align-items: center;
     }
     .ai-copy-button:hover {
       background: #1976D2;
       transform: translateY(-1px);
+    }
+    .ai-main-action {
+      font-size: 13px;
+    }
+    .ai-quick-links {
+      display: flex;
+      gap: 8px;
+      font-size: 11px;
+      align-items: center;
+    }
+    .ai-quick-links span {
+      opacity: 0.8;
+      cursor: default;
+    }
+    .ai-link-btn {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 3px 8px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .ai-link-btn:hover {
+      background: rgba(255, 255, 255, 0.35);
+      transform: scale(1.05);
     }
     .hilite2ai-notice {
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -169,9 +196,22 @@
     return null;
   }
 
+  // Helper function to build the contextual prompt
+  function buildPrompt(selectedText, currentUrl, pageTitle, nearestHeading) {
+    let prompt = `Message created via hilite2ai.com\n\n` +
+                 `I am viewing:\n\n` +
+                 ` • Source: ${currentUrl}\n` +
+                 ` • Title: ${pageTitle}\n`;
+    if (nearestHeading) {
+      prompt += ` • Section: ${nearestHeading}\n`;
+    }
+    prompt += `\nPlease explain: "${selectedText}"`;
+    return prompt;
+  }
+
   document.addEventListener('mouseup', (e) => {
-    // Ignore if clicking the button itself
-    if (copyButton && e.target === copyButton) {
+    // Ignore if clicking the button itself or its children
+    if (copyButton && (e.target === copyButton || copyButton.contains(e.target))) {
       return;
     }
 
@@ -189,9 +229,13 @@
       const range = selection.getRangeAt(0);
       const rect = range.getBoundingClientRect();
 
-      // Create button
-      copyButton = document.createElement('button');
-      copyButton.textContent = '🤖 Copy to AI for details';
+      const currentUrl = window.location.href;
+      const pageTitle = document.title;
+      const nearestHeading = findNearestHeading(selection);
+      const prompt = buildPrompt(selectedText, currentUrl, pageTitle, nearestHeading);
+
+      // Create button container
+      copyButton = document.createElement('div');
       copyButton.className = 'ai-copy-button';
 
       // Position near selection
@@ -200,39 +244,64 @@
       copyButton.style.top = `${rect.bottom + window.scrollY + 5}px`;
       copyButton.style.zIndex = '10000';
 
-      // Handle click
+      // Build button content
+      copyButton.innerHTML = `
+        <div class="ai-main-action">🤖 Copy to any AI for details</div>
+        <div class="ai-quick-links">
+          <span>Or ask:</span>
+          <div class="ai-link-btn" data-ai="claude">Claude</div>
+          <div class="ai-link-btn" data-ai="chatgpt">ChatGPT</div>
+        </div>
+      `;
+
+      // Handle main copy action (click on container but not on link buttons)
       copyButton.addEventListener('click', (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-
-        const currentUrl = window.location.href;
-        const pageTitle = document.title;
-        const nearestHeading = findNearestHeading(selection);
-
-        // Build contextual prompt
-        let prompt = `Message created via hilite2ai.com\n\n` +
-                     `I am viewing:\n\n` +
-                     ` • Source: ${currentUrl}\n` +
-                     ` • Title: ${pageTitle}\n`;
-        if (nearestHeading) {
-          prompt += ` • Section: ${nearestHeading}\n`;
-        }
-        prompt += `\nPlease explain: "${selectedText}"`;
-
-        navigator.clipboard.writeText(prompt).then(() => {
-          copyButton.textContent = `✓ Copied! Press ${thisOS}+V in your AI`;
-          copyButton.style.background = '#4CAF50';
-
-          // Remove the selection after copying
+        // Check if click was on a quick link button
+        const aiLinkBtn = e.target.closest('.ai-link-btn');
+        if (aiLinkBtn) {
+          e.preventDefault();
+          e.stopPropagation();
+          
+          const aiType = aiLinkBtn.dataset.ai;
+          const encodedPrompt = encodeURIComponent(prompt);
+          
+          let url;
+          if (aiType === 'claude') {
+            url = `https://claude.ai/new?q=${encodedPrompt}`;
+          } else if (aiType === 'chatgpt') {
+            url = `https://chatgpt.com/?q=${encodedPrompt}`;
+          }
+          
+          window.open(url, '_blank');
+          
+          // Clean up
           window.getSelection().removeAllRanges();
+          if (copyButton) copyButton.remove();
+          copyButton = null;
+          
+          return;
+        }
 
-          setTimeout(() => {
-            if (copyButton) copyButton.remove();
-          }, 3000);
-        }).catch(err => {
-          console.error('Copy failed:', err);
-          copyButton.textContent = '❌ Copy failed';
-        });
+        // Otherwise, handle copy to clipboard
+        if (!e.target.closest('.ai-quick-links')) {
+          e.preventDefault();
+          e.stopPropagation();
+
+          navigator.clipboard.writeText(prompt).then(() => {
+            copyButton.innerHTML = `<div style="text-align: center;">✓ Copied!<br>Press ${thisOS}+V in your AI</div>`;
+            copyButton.style.background = '#4CAF50';
+
+            // Remove the selection after copying
+            window.getSelection().removeAllRanges();
+
+            setTimeout(() => {
+              if (copyButton) copyButton.remove();
+            }, 3000);
+          }).catch(err => {
+            console.error('Copy failed:', err);
+            copyButton.innerHTML = '<div>❌ Copy failed</div>';
+          });
+        }
       });
 
       document.body.appendChild(copyButton);
@@ -241,7 +310,7 @@
 
   // Remove button when clicking elsewhere
   document.addEventListener('mousedown', (e) => {
-    if (copyButton && e.target !== copyButton) {
+    if (copyButton && e.target !== copyButton && !copyButton.contains(e.target)) {
       copyButton.remove();
       copyButton = null;
     }
