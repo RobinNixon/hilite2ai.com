@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hilite2ai Demo - AI-Enhanced Content</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      color: #333;
+    }
+    
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #eee;
+    }
+    
+    h1 {
+      color: #2196F3;
+      margin-bottom: 10px;
+    }
+    
+    .subtitle {
+      color: #666;
+      font-size: 1.2em;
+    }
+    
+    .demo-section {
+      margin: 40px 0;
+      padding: 30px;
+      background: #f9f9f9;
+      border-radius: 8px;
+      border-left: 4px solid #2196F3;
+    }
+    
+    h2 {
+      color: #1976D2;
+      margin-top: 0;
+    }
+    
+    .try-it {
+      background: #fff3cd;
+      border: 1px solid #ffc107;
+      padding: 15px;
+      border-radius: 5px;
+      margin: 20px 0;
+    }
+    
+    .try-it strong {
+      color: #856404;
+    }
+    
+    code {
+      background: #f4f4f4;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+      color: #e83e8c;
+    }
+    
+    .feature-list {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .feature-list li {
+      padding: 10px 0;
+      padding-left: 30px;
+      position: relative;
+    }
+    
+    .feature-list li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #4CAF50;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    
+    footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 2px solid #eee;
+      text-align: center;
+      color: #666;
+    }
+    
+    .github-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #24292e;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    
+    .github-link:hover {
+      background: #1b1f23;
+    }
+  </style>
+</head>
+<body>
+  <!-- Optional: Add the notice banner -->
+  <div id="hilite2ai"></div>
+
+  <header>
+    <h1>hilite2ai Demo</h1>
+    <p class="subtitle">Making web content AI-ready, one highlight at a time</p>
+  </header>
+
+  <div class="try-it">
+    <strong>👋 Try it now!</strong> Highlight any text on this page to see the magic happen.
+  </div>
+
+  <div class="demo-section">
+    <h2>What is Machine Learning?</h2>
+    <p>
+      Machine learning is a subset of artificial intelligence that focuses on enabling 
+      systems to learn and improve from experience without being explicitly programmed. 
+      The core idea is that machines can identify patterns in data and make decisions 
+      with minimal human intervention.
+    </p>
+    <p>
+      One of the most important concepts in machine learning is the <strong>neural network</strong>, 
+      which is inspired by the structure of the human brain. These networks consist of 
+      interconnected nodes (neurons) that process information in layers, allowing the system 
+      to learn complex patterns and relationships in data.
+    </p>
+  </div>
+
+  <div class="demo-section">
+    <h2>Understanding Neural Networks</h2>
+    <p>
+      A neural network learns through a process called <strong>backpropagation</strong>. 
+      This is an algorithm that calculates the gradient of the loss function with respect 
+      to the network's weights, allowing the network to adjust and improve its predictions.
+    </p>
+    <p>
+      The training process involves feeding data through the network, comparing the output 
+      to the desired result, and then adjusting the weights backwards through the layers. 
+      This iterative process continues until the network achieves satisfactory performance 
+      on the training data.
+    </p>
+  </div>
+
+  <div class="demo-section">
+    <h2>Key Features</h2>
+    <ul class="feature-list">
+      <li><strong>Zero Configuration</strong> - Just add one script tag and you're done</li>
+      <li><strong>Privacy First</strong> - No data sent to external servers</li>
+      <li><strong>AI Agnostic</strong> - Works with Claude, ChatGPT, Gemini, and more</li>
+      <li><strong>Contextual</strong> - Includes page title, URL, and section heading</li>
+      <li><strong>Lightweight</strong> - Only ~3KB minified</li>
+      <li><strong>Mobile Friendly</strong> - Works on all devices</li>
+    </ul>
+  </div>
+
+  <div class="demo-section">
+    <h2>How It Works</h2>
+    <p>
+      When you highlight text on a page using hilite2ai, the script automatically:
+    </p>
+    <ol>
+      <li>Captures the selected text</li>
+      <li>Finds the nearest preceding heading for context</li>
+      <li>Grabs the page title and URL</li>
+      <li>Formats everything into a structured prompt</li>
+      <li>Copies it to your clipboard</li>
+    </ol>
+    <p>
+      Then you just paste it into your favorite AI assistant, and it has all the context 
+      it needs to give you a helpful, relevant explanation!
+    </p>
+  </div>
+
+  <div class="demo-section">
+    <h2>Integration Example</h2>
+    <p>Adding hilite2ai to your website is simple:</p>
+    <pre><code>&lt;!-- Just add this script tag --&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/yourusername/hilite2ai@1.0.0/hilite2ai.js"&gt;&lt;/script&gt;
+
+&lt;!-- Optional: Show a notice banner --&gt;
+&lt;div id="hilite2ai"&gt;&lt;/div&gt;</code></pre>
+    <p>That's it! Your entire website is now AI-enhanced.</p>
+  </div>
+
+  <footer>
+    <p>
+      <strong>hilite2ai</strong> - Open source project by Robin Nixon<br>
+      Making educational content more accessible through AI
+    </p>
+    <a href="https://github.com/yourusername/hilite2ai" class="github-link">
+      View on GitHub
+    </a>
+  </footer>
+
+  <!-- Include the hilite2ai script -->
+  <script src="hilite2ai.js"></script>
+</body>
+</html>

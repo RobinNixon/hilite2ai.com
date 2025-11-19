@@ -1,0 +1,41 @@
+{
+  "name": "hilite2ai",
+  "version": "1.0.0",
+  "description": "Make any website AI-ready by enabling users to highlight text and copy contextual prompts to their favorite AI assistant",
+  "main": "hilite2ai.js",
+  "scripts": {
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/hilite2ai.git"
+  },
+  "keywords": [
+    "ai",
+    "artificial-intelligence",
+    "claude",
+    "chatgpt",
+    "gemini",
+    "learning",
+    "education",
+    "highlight",
+    "prompt",
+    "context",
+    "llm",
+    "browser",
+    "javascript",
+    "vanilla-js",
+    "ai-assistant"
+  ],
+  "author": "Robin Nixon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/hilite2ai/issues"
+  },
+  "homepage": "https://hilite2ai.com",
+  "files": [
+    "hilite2ai.js",
+    "README.md",
+    "LICENSE"
+  ]
+}
