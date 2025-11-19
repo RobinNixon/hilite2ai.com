@@ -102,18 +102,6 @@ The script uses CSS classes you can override:
 }
 ```
 
-## 🌐 Browser Support
-
-Works in all modern browsers:
-- ✅ Chrome/Edge 90+
-- ✅ Firefox 88+
-- ✅ Safari 14+
-- ✅ Mobile browsers (iOS Safari, Chrome Mobile)
-
-**Requirements:**
-- `navigator.clipboard` API (HTTPS required)
-- ES6 support
-
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
