@@ -10,7 +10,7 @@
 Add one line to your website:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/RobinNixon/hilite2ai.com@main/hilite2ai.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/RobinNixon/hilite2ai.com@main/hilite2ai.min.js"></script>
 ```
 
 That's it! Users can now:
@@ -48,11 +48,10 @@ This gives AI assistants complete context for better, more relevant answers.
 
 ## 🎨 Optional: Add a Notice Banner
 
-Want to let users know your site is AI-enhanced? Add this div anywhere on your page:
+Want to let users know your site is AI-enhanced? Also add this div anywhere on your page (as long as you have also added the script):
 
 ```html
 <div id="hilite2ai"></div>
-<script src="https://cdn.jsdelivr.net/gh/RobinNixon/hilite2ai.com@main/hilite2ai.js"></script>
 ```
 
 The script will automatically populate it with a beautiful, dismissible banner.
