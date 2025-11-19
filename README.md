@@ -1,6 +1,6 @@
 # hilite2ai.com
 
-**Make any website AI-ready in seconds.** A lightweight JavaScript library that lets your users highlight text and copy contextual prompts to their favorite AI assistant.
+**Make any website AI-ready in seconds.** A lightweight JavaScript library that lets your users highlight text and copy contextual prompts to their favorite AI assistant, or immediately query either Claude or ChatGPT.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://github.com/RobinNixon/hilite2ai.com)
@@ -26,7 +26,8 @@ The script will automatically populate it with a beautiful, dismissible banner.
 That's it! Users can now:
 1. **Highlight** any text on your page
 2. **Click** the "🤖 Copy to AI for details" button
-3. **Paste** into Claude, ChatGPT, Gemini, or any AI tool
+3. **Paste** into Gemini, Grok or any AI tool, or...
+4. **Directly query** Claude or ChatGPT
 
 ## ✨ Features
 
@@ -54,7 +55,7 @@ I am viewing:
 Please explain: "backpropagation algorithm"
 ```
 
-This gives AI assistants complete context for better, more relevant answers.
+This gives AI assistants complete context for better, more relevant answers. If the user has access to Claude or ChatGPT they can directly query either of these chatbots without having to paste the prompt.
 
 ## 💡 Why Use This?
 
