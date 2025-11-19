@@ -3,14 +3,14 @@
 **Make any website AI-ready in seconds.** A lightweight JavaScript library that lets users highlight text and copy contextual prompts to their favorite AI assistant.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://github.com/RobinNixon/hilite2ai)
+[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://github.com/RobinNixon/hilite2ai.com)
 
 ## 🚀 Quick Start
 
 Add one line to your website:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/RobinNixon/hilite2ai@1.0.0/hilite2ai.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/RobinNixon/hilite2ai.com@main/hilite2ai.js"></script>
 ```
 
 That's it! Users can now:
@@ -52,7 +52,7 @@ Want to let users know your site is AI-enhanced? Add this div anywhere on your p
 
 ```html
 <div id="hilite2ai"></div>
-<script src="https://cdn.jsdelivr.net/gh/RobinNixon/hilite2ai@1.0.0/hilite2ai.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/RobinNixon/hilite2ai.com@main/hilite2ai.js"></script>
 ```
 
 The script will automatically populate it with a beautiful, dismissible banner.
@@ -98,20 +98,6 @@ The script uses CSS classes you can override:
 }
 ```
 
-### Version Pinning
-
-Use a specific version to prevent breaking changes:
-
-```html
-<script src="https://cdn.jsdelivr.net/gh/RobinNixon/hilite2ai@1.0.0/hilite2ai.js"></script>
-```
-
-Or always get the latest:
-
-```html
-<script src="https://cdn.jsdelivr.net/gh/RobinNixon/hilite2ai@latest/hilite2ai.js"></script>
-```
-
 ## 🌐 Browser Support
 
 Works in all modern browsers:
@@ -132,7 +118,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 1. Clone the repo
 ```bash
-git clone https://github.com/RobinNixon/hilite2ai.git
+git clone https://github.com/RobinNixon/hilite2ai.com.git
 ```
 
 2. Make changes to `hilite2ai.js`
@@ -160,8 +146,8 @@ As AI becomes integrated into browsers, this pattern will evolve. The structured
 
 ## 📞 Support
 
-- 🐛 **Bug reports**: [GitHub Issues](https://github.com/yRobinNixon/hilite2ai/issues)
-- 💬 **Questions**: [GitHub Discussions](https://github.com/RobinNixon/hilite2ai/discussions)
+- 🐛 **Bug reports**: [GitHub Issues](https://github.com/yRobinNixon/hilite2ai.com/issues)
+- 💬 **Questions**: [GitHub Discussions](https://github.com/RobinNixon/hilite2ai.com/discussions)
 - 🌐 **Website**: [hilite2ai.com](https://hilite2ai.com)
 
 ---
