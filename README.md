@@ -46,9 +46,9 @@ Please explain: "backpropagation algorithm"
 
 This gives AI assistants complete context for better, more relevant answers.
 
-## 🎨 Optional: Add a Notice Banner
+## 🎨 Add a Notice Banner
 
-Want to let users know your site is AI-enhanced? Also add this div anywhere on your page (as long as you have also added the script):
+Let users know your site is AI-enhanced and how to access it by adding this div anywhere on your page (as long as you have also added the script):
 
 ```html
 <div id="hilite2ai"></div>
