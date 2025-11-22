@@ -9,7 +9,7 @@
   const styles = `
     .ai-copy-button {
       padding: 8px 12px;
-      background: #2196F3;
+      background: #236;
       color: white;
       border: 1px solid #bbb;
       border-radius: 7px;
@@ -25,7 +25,7 @@
       align-items: center;
     }
     .ai-copy-button:hover {
-      background: #1976D2;
+      background: #248;
       transform: translateY(-1px);
     }
     .ai-main-action {
@@ -42,7 +42,7 @@
       cursor: default;
     }
     .ai-link-btn {
-      background: rgba(255, 255, 255, 0.2);
+      background: rgba(80, 0, 0, 0.2);
       padding: 3px 8px;
       border-radius: 4px;
       cursor: pointer;
@@ -50,11 +50,11 @@
       border: 1px solid rgba(255, 255, 255, 0.3);
     }
     .ai-link-btn:hover {
-      background: rgba(255, 255, 255, 0.35);
+      background: rgba(80, 80, 80, 0.5);
       transform: scale(1.05);
     }
     .hilite2ai-notice {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      background: linear-gradient(135deg, #248 0%, #236 50%, #248 100%);
       color: white;
       padding: 12px 16px;
       border-radius: 8px;
@@ -289,7 +289,7 @@
 
           navigator.clipboard.writeText(prompt).then(() => {
             copyButton.innerHTML = `<div style="text-align: center;">✓ Copied!<br>Press ${thisOS}+V in your AI</div>`;
-            copyButton.style.background = '#4CAF50';
+            copyButton.style.background = '#373';
 
             // Remove the selection after copying
             window.getSelection().removeAllRanges();
